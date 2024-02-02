@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%)
+}
+
+body {
+  width: 100vw;
+  background-color: var(--Cream);
+}
+
+.container {
+  background-color: var(--White);
+  width: 50%;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 6% auto;
+}
+
+.hero-div-1{
+  width: 100%;
+}
+
+
+.hero-img {
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-img2{
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.hero-div-2{
+  padding: 2% 5% 3% ;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 5%;
+}
+
+h2{
+  align-self: flex-start;
+  letter-spacing: 4px;
+  color: var(--Darkgrayishblue);
+}
+
+h1{
+  align-self: flex-start;
+  color: var(--Verydarkblue);
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+p{
+  line-height: 1.8;
+  color: var(--Darkgrayishblue);
+  text-align: justify;
+}
+
+.price{
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Darkcyan);
+}
+
+span{
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+  font-size: small;
+  padding-top: 4%;
+  padding-right: 50%;
+  float: right;
+}
+
+button{
+  width: 100% ;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--Darkcyan);
+  color: var(--White);
+  padding: 4% 6%;
+  font-size: 1rem;
+  font-weight: 500;
+  word-spacing: 2px;
+  transition: all 0.4s ease;
+}
+
+button img{
+  padding-right: 5%;
+}
+button:hover{
+  cursor: pointer;
+  background-color: hsl(159, 35%, 17%);
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color:var(--Darkcyan);
+}
